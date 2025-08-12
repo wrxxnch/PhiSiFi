@@ -285,7 +285,7 @@ void handleAdmin() {
       int n = WiFi.softAPdisconnect (true);
       Serial.println(String(n));
       WiFi.softAPConfig(IPAddress(192, 168, 4, 1) , IPAddress(192, 168, 4, 1) , IPAddress(255, 255, 255, 0));
-      WiFi.softAP("WiPhi_34732", "d347h320");
+      WiFi.softAP("WiPhi_DEDSEC", "123456789");
       dnsServer.start(53, "*", IPAddress(192, 168, 4, 1));
     }
     return;
